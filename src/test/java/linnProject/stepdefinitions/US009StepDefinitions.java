@@ -142,7 +142,7 @@ public class US009StepDefinitions {
 
     @And("Save botonuna tikla")
     public void saveBotonunaTikla() {
-        ReusableMethods.waitFor(5);
+        //ReusableMethods.waitFor(5);
         us009Page.saveButton.click();
     }
 
@@ -155,7 +155,7 @@ public class US009StepDefinitions {
 
     @Then("Create Date textbox a gecmiş bir tarih data gir")
     public void createDateTextboxAGecmişBirTarihDataGir() {
-        ReusableMethods.waitFor(5);
+        //ReusableMethods.waitFor(5);
         us009Page.createDateTextBox.click();
         us009Page.createDateTextBox.sendKeys("06" + "20" + "2019" + Keys.TAB + "03" + "03" );
         System.out.println(us009Page.createDateTextBox.getAttribute("value"));
@@ -173,7 +173,7 @@ public class US009StepDefinitions {
 
     @And("Create Date textbox a eksik tarih gir")
     public void createDateTextboxAEksikTarihGir() {
-        ReusableMethods.waitFor(5);
+        //ReusableMethods.waitFor(5);
         us009Page.createDateTextBox.click();
         us009Page.createDateTextBox.sendKeys(Keys.DELETE);
         System.out.println(us009Page.createDateTextBox.getAttribute("class"));
