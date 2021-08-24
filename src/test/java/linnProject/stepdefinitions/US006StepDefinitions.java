@@ -1,4 +1,5 @@
 
+
 package linnProject.stepdefinitions;
 
 import io.cucumber.java.en.And;
@@ -12,7 +13,6 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -173,6 +173,5 @@ public class US006StepDefinitions {
         us006Page.emailDegistir.sendKeys("celik@can.com");
     }
 
-
-
 }
+
