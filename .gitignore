@@ -2,4 +2,4 @@ target
 *.iml
 .idea
 configuration.properties
-runners
+linnProject.runners
