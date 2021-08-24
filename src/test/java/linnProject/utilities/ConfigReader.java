@@ -7,7 +7,7 @@ import java.util.Properties;
 public class ConfigReader {
     private static Properties properties;
     static {
-        String path="configuration.properties";
+        String path="src/test/java/linnProject/configuration.properties";
         try {
             FileInputStream fileInputStream=new FileInputStream(path);
             properties=new Properties();
