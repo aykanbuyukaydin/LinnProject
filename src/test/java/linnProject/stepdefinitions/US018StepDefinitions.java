@@ -34,22 +34,20 @@ public class US018StepDefinitions {
 
     }
 
-    @And("kulanici username girer")
-    public void kulaniciUsernameGirer() {
+    @And("acilan sayfada username girer")
+    public void acilanSayfadaUsernameGirer() {
 
         us018Page.usernameTextBox.sendKeys(ConfigReader.getProperty("kr_gecerli_username"));
-
     }
 
-    @And("kulanici password girer")
-    public void kulaniciPasswordGirer() {
+    @And("acilan sayfada password girer")
+    public void acilanSayfadaPasswordGirer() {
 
         us018Page.passwordTextBox.sendKeys(ConfigReader.getProperty("kr_gecerli_password"));
     }
 
-
-    @And("kulanici Signin tiklar")
-    public void kulaniciSigninTiklar() {
+    @And("kulanici ikinci Signin butonuna tiklar")
+    public void kulaniciIkinciSigninButonunaTiklar() {
 
         us018Page.secondSignInButton.click();
     }
@@ -161,5 +159,4 @@ public class US018StepDefinitions {
         //Assert.assertTrue(us018Page.silindiYazisi.isDisplayed());
 
     }
-
 }

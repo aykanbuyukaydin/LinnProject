@@ -6,9 +6,9 @@ Feature: US018_musteri yonetme
     Given kullanci "url_home" sayfasina gider
     And insan butonuna tiklar
     And sign in click yapar
-    And kulanici username girer
-    And kulanici password girer
-    And kulanici Signin tiklar
+    And acilan sayfada username girer
+    And acilan sayfada password girer
+    And kulanici ikinci Signin butonuna tiklar
     And My operations yazisina click yap
     And Manage Customers yazisina click yap
 
