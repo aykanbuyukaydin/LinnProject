@@ -34,7 +34,7 @@ public class US018StepDefinitions {
 
     }
 
-    /*@Given("User Name gir")
+    @Given("User Name gir")
     public void user_name_gir() {
 
         us018Page.usernameTextBox.sendKeys(ConfigReader.getProperty("kr_gecerli_username"));
@@ -53,7 +53,7 @@ public class US018StepDefinitions {
 
         us018Page.secondSignInButton.click();
 
-    }*/
+    }
 
     @Given("My operations yazisina click yap")
     public void my_operations_yazisina_click_yap() {
