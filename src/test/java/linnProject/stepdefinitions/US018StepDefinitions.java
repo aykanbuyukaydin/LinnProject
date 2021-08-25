@@ -34,26 +34,24 @@ public class US018StepDefinitions {
 
     }
 
-    @Given("User Name gir")
-    public void user_name_gir() {
+    @And("acilan sayfada username girer")
+    public void acilanSayfadaUsernameGirer() {
 
         us018Page.usernameTextBox.sendKeys(ConfigReader.getProperty("kr_gecerli_username"));
-
     }
 
-    @Given("Paswword gir")
-    public void paswword_gir() {
+    @And("acilan sayfada password girer")
+    public void acilanSayfadaPasswordGirer() {
 
         us018Page.passwordTextBox.sendKeys(ConfigReader.getProperty("kr_gecerli_password"));
-
     }
 
-    @Given("Sign in click yap")
-    public void sign_in_click_yap() {
+    @And("kulanici ikinci Signin butonuna tiklar")
+    public void kulaniciIkinciSigninButonunaTiklar() {
 
         us018Page.secondSignInButton.click();
-
     }
+
 
     @Given("My operations yazisina click yap")
     public void my_operations_yazisina_click_yap() {
