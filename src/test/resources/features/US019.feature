@@ -1,4 +1,3 @@
-
 Feature: US_019 banka_hesabi_olusturma
 
   Background: US_019_ilkSekizStep
