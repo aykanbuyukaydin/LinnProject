@@ -1,4 +1,4 @@
-target
+gtarget
 *.iml
 .idea
 src/test/java/linnProject/configuration.properties

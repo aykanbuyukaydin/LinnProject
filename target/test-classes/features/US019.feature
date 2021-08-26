@@ -1,3 +1,4 @@
+
 Feature: US_019 banka_hesabi_olusturma
 
   Background: US_019_ilkSekizStep
@@ -5,9 +6,9 @@ Feature: US_019 banka_hesabi_olusturma
     Given kullanci "url_home" sayfasina gider
     And insan butonuna tiklar
     And sign in click yapar
-    And acilan sayfada username girer
-    And acilan sayfada password girer
-    And kulanici ikinci Signin butonuna tiklar
+    And User Name gir
+    And Paswword gir
+    And Sign in click yap
     And My operations yazisina click yap
     And Manage Accounts yazisina click yap
     And Create a new Account butonuna click yap
