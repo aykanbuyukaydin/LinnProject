@@ -15,7 +15,8 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="linnProject/stepdefinitions",
 
-        tags="@wip", // work in progress
+
+        tags="@wipemre3", // work in progress
 
 
 
