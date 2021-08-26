@@ -15,12 +15,9 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="linnProject/stepdefinitions",
 
-
         tags="@wip", // work in progress
 
 
-      
-        tags="@TC_1205", // work in progress
 
         dryRun=false
 
