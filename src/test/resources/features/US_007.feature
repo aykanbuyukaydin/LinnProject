@@ -1,13 +1,13 @@
-
+@US_007
 Feature:US_007_Sistem, geçersiz kimlik bilgileriyle güncelleme yapılmasına izin vermemelidir.
 
-  Background:
+  Background:Us_007
     Given kullanici "url_home" sayfasina gider
-    And Insan Butuna tikla
-    Then Sign in click yap
+    And insan tusuna tikla
+    Then Giris tikla
     And User Name gir
     And Paswword gir
-    And SignIn click yap
+    And Giris butonuna bas
     And cikan sayfada sag uste username ye tikla
     And user yazan insan butonuna tikla
     And User Info ya tikla

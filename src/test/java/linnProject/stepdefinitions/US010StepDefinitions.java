@@ -11,12 +11,13 @@ import org.openqa.selenium.WebDriver;
 
 public class US010StepDefinitions {
 
+
     WebDriver driver;
 
     US010Page us010Page = new US010Page();
 
     @Given("{string} adresine giris yapilir")
-    public void adresine_giris_yapilir(String url) {
+    public void adresineGirisYapilir(String arg0) {
 
         Driver.getDriver().get(ConfigReader.getProperty("url_home"));
     }
@@ -154,19 +155,6 @@ public class US010StepDefinitions {
     public void sayfayiKapatir() {
         Driver.closeDriver();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
