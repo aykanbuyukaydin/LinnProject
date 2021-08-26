@@ -13,7 +13,7 @@ public class Hooks {
     public void setup() {
 
     }
-
+/*
     @After
     public void tearDown(Scenario scenario) {
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -22,4 +22,6 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
+
+ */
 }

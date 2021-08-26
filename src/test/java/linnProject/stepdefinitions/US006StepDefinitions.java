@@ -52,10 +52,10 @@ public class US006StepDefinitions {
         us006Page.password.sendKeys("User06.");
     }
 
-    @And("SignIn click yap")
-    public void signınClickYap() {
-        us006Page.signInClick.click();
-    }
+   // @And("SignIn click yap")
+    //public void signınClickYap() {
+   //     us006Page.signInClick.click();
+   // }
 
     @Then("cikan sayfada sag uste username ye tikla")
     public void cikan_sayfada_sag_uste_username_ye_tikla() {
@@ -168,4 +168,7 @@ public class US006StepDefinitions {
         us006Page.emailDegistir.clear();
         us006Page.emailDegistir.sendKeys("celik@can.com");
     }
+
+
 }
+
