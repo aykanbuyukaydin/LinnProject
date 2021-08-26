@@ -1,3 +1,5 @@
+
+
 package linnProject.stepdefinitions;
 
 import io.cucumber.java.en.And;
@@ -11,7 +13,6 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,13 +33,15 @@ public class US006StepDefinitions {
     }
 
 
-    @Given("Insan Butuna tikla")
-    public void ınsan_butuna_tikla() {
+    @And("insan tusuna tikla")
+    public void insanTusunaTikla() {
+
         us006Page.insanButonu.click();
     }
 
-    @Then("Sign in click yap")
-    public void sign_in_click_yap() {
+    @Then("Giris tikla")
+    public void girisTikla() {
+
         us006Page.signIn.click();
     }
 
@@ -52,10 +55,18 @@ public class US006StepDefinitions {
         us006Page.password.sendKeys("User06.");
     }
 
-    @And("SignIn click yap")
-    public void signınClickYap() {
+
+   // @And("SignIn click yap")
+    //public void signınClickYap() {
+   //     us006Page.signInClick.click();
+   // }
+
+    @And("Giris butonuna bas")
+    public void girisButonunaBas() {
+
         us006Page.signInClick.click();
     }
+
 
     @Then("cikan sayfada sag uste username ye tikla")
     public void cikan_sayfada_sag_uste_username_ye_tikla() {
@@ -169,3 +180,4 @@ public class US006StepDefinitions {
         us006Page.emailDegistir.sendKeys("celik@can.com");
     }
 }
+
