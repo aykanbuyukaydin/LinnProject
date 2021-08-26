@@ -1,5 +1,7 @@
 target
 *.iml
 .idea
+runner
+configuration.properties
 configuration.properties
 linnProject.runners
