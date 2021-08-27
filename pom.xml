@@ -10,8 +10,15 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+<<<<<<< HEAD
     <!-- CUCUMBER -->
     <dependencies>
+=======
+
+    <!-- CUCUMBER -->
+    <dependencies>
+
+>>>>>>> main
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -37,6 +44,10 @@
             <version>6.9.1</version>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -44,6 +55,10 @@
             <version>1.7.30</version>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <!--   POI  -->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
@@ -51,28 +66,49 @@
             <artifactId>poi</artifactId>
             <version>4.1.2</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <!--   API  -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20190722</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>4.3.1</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <!-- POJO  -->
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> main
         <!-- DATABASE  -->
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
@@ -80,16 +116,28 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.18</version>
         </dependency>
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.9.8</version>
         </dependency>
+<<<<<<< HEAD
         <!-- Java Faker  -->
+=======
+
+
+        <!-- Java Faker  -->
+
+>>>>>>> main
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
+<<<<<<< HEAD
         </dependency>
         <!-- PDF -->
         <!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
@@ -97,7 +145,29 @@
             <groupId>com.itextpdf</groupId>
             <artifactId>itextpdf</artifactId>
             <version>5.5.13.2</version>
+=======
+>>>>>>> main
         </dependency>
+
+
+        <!-- PDF -->
+
+        <!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
     </dependencies>
     <build>
         <plugins>
