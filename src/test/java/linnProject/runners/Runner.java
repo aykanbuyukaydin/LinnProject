@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
 
       
-        tags="@TC_1205", // work in progress
+        tags="@user06", // work in progress
 
         dryRun=false
 
