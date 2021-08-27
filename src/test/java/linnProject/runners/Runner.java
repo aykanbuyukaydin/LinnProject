@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
 
       
-        tags="@user06", // work in progress 
+        tags="@registrationPage" , // work in progress
 
 
 
