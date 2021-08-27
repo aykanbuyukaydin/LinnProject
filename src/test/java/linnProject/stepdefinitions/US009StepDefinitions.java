@@ -189,5 +189,5 @@ public class US009StepDefinitions {
         Assert.assertTrue(us009Page.createDateTextBox.getAttribute("class").contains("invalid"));
     }
 }
-}
+
 

@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         glue="linnProject/stepdefinitions",
 
 
-        tags="@wipemre3", // work in progress
+        tags="@wipemre1", // work in progress
 
 
 
