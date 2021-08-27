@@ -1,4 +1,4 @@
-@raporUS009 @wip
+@raporUS009 @calisma
 Feature: US009_SSN Gore Kullanici Arama
 
   @raporTC901
@@ -18,4 +18,4 @@ Feature: US009_SSN Gore Kullanici Arama
     Then SSN no nun geldiğini test et ab
     And SSN search yapildiginda diger bilgilerin geldigini test et ab
 
-    Then sayfayi kapatin ab
+    #Then sayfayi kapatin ab
