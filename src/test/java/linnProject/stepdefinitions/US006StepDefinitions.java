@@ -9,9 +9,7 @@ import linnProject.pages.US006Page;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
