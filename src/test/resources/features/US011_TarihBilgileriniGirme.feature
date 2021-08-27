@@ -29,7 +29,7 @@ Feature: US011_Tarih Musteri Olusturma Aninda OLusturulmalidir
     And Save botonuna tikla ab
     And translation-not-found yazısının geldigini test et ab
 
-    Then sayfayi kapatin ab
+    #Then sayfayi kapatin ab
 
   @raporTC1102
   Scenario: Girilen tarih, müşteri oluşturma anından daha erken veya geçmişte olamaz.
@@ -42,7 +42,7 @@ Feature: US011_Tarih Musteri Olusturma Aninda OLusturulmalidir
     And Save botonuna tikla ab
     And translation-not-found yazısının gelmedigini test et ab
 
-    Then sayfayi kapatin ab
+    #Then sayfayi kapatin ab
 
   @raporTC1103
   Scenario: Tarih ay, gün, yıl, saat ve dakika olarak oluşturulmalıdır.
@@ -50,4 +50,4 @@ Feature: US011_Tarih Musteri Olusturma Aninda OLusturulmalidir
     And Create Date textbox a eksik tarih gir ab
     And Tarih Text Box class degerinin invalid oldugunu test et ab
 
-    Then sayfayi kapatin ab
+    #Then sayfayi kapatin ab
