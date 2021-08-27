@@ -3,7 +3,7 @@ package linnProject.pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Country {
+public class Country_Ders_linn {
     private int id;
     private String name;
     private String states;
