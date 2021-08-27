@@ -10,9 +10,9 @@ import linnProject.pages.US009Page;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
+import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
+
 
 public class US003StepDefinitions {
     US003Page page = new US003Page();
@@ -100,7 +100,7 @@ public class US003StepDefinitions {
 
     @When("US003 strengthBar krımızı bir cızgı dogrula")
     public void us003_strength_bar_krımızı_bir_cızgı_dogrula() {
-        Assert.assertTrue(page.strength_bar_seviye_kırmızı.isDisplayed(),"US003 strengthBar krımızı bir cızgı DEGIL");
+        Assert.assertTrue("US003 strengthBar krımızı bir cızgı DEGIL", page.strength_bar_seviye_kırmızı.isDisplayed());
 
     }
 

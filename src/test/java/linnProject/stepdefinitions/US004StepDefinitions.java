@@ -7,8 +7,8 @@ import linnProject.pages.US004Page;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
+import org.junit.Assert;
+
 
 public class US004StepDefinitions {
 
