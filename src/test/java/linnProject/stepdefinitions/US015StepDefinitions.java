@@ -9,10 +9,10 @@ import linnProject.utilities.Driver;
 public class US015StepDefinitions {
     US015Page us015Page = new US015Page();
 
-    @Given("kullanici {string} sayfasina gider")
-    public void kullaniciSayfasinaGider(String url_home) {
-        Driver.getDriver().get(ConfigReader.getProperty("url_home"));
-    }
+//    @Given("kullanici {string} sayfasina gider")
+//    public void kullaniciSayfasinaGider(String url_home) {
+//        Driver.getDriver().get(ConfigReader.getProperty("url_home"));
+//    }
 
     @Given("insan simgesine tiklar")
     public void insan_simgesine_tiklar() {
