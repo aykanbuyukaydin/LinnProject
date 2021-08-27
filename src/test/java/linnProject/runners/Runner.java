@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
 
       
-        tags="@calisma" , // work in progress
+        tags="@registrationPage" , // work in progress
 
 
 
