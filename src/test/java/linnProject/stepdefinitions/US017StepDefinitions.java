@@ -1,17 +1,5 @@
 package linnProject.stepdefinitions;
 
-//
-//import io.cucumber.java.en.And;
-//import io.cucumber.java.en.Given;
-//import io.cucumber.java.en.Then;
-//import linnProject.pages.US017Page;
-//import linnProject.utilities.ConfigReader;
-//import linnProject.utilities.Driver;
-//import org.junit.Assert;
-//import org.openqa.selenium.Keys;
-//import org.openqa.selenium.interactions.Actions;
-//import org.openqa.selenium.support.ui.Select;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
