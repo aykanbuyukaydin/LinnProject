@@ -91,10 +91,10 @@ public class US009StepDefinitions {
         Assert.assertTrue(us009Page.mobilePhoneNumberTextBox.getAttribute("value").contains("555-555-5553"));
     }
 
-    @Then("sayfayi kapatin ab")
-    public void sayfayi_kapatin_ab() {
-Driver.closeDriver();
-    }
+    //@Then("sayfayi kapatin ab")
+    //public void sayfayi_kapatin_ab() {
+//Driver.closeDriver();
+  //  }
 
     @Then("Middle Initial textbox a data gir ab")
     public void middleInitialTextboxADataGirAb() {
