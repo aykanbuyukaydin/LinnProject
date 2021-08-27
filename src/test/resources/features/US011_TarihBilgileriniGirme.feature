@@ -1,4 +1,4 @@
-@raporUS011 @wip
+@raporUS011 @calisma
 Feature: US011_Tarih Musteri Olusturma Aninda OLusturulmalidir
 
   Background: Login olarak giris yapip musteri olusturma
