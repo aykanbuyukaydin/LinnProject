@@ -7,6 +7,9 @@ import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 
 public class US015StepDefinitions {
+
+
+
     US015Page us015Page = new US015Page();
 
 //    @Given("kullanici {string} sayfasina gider")
@@ -67,4 +70,5 @@ public class US015StepDefinitions {
     public void descriptionAltindaYerAlanAciklamayiGorur() {
         System.out.println("Islem aciklamasi :" + us015Page.islemAciklamasi.getText());
     }
+
 }
