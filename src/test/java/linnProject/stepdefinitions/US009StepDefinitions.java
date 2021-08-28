@@ -1,7 +1,6 @@
 
 package linnProject.stepdefinitions;
 
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,12 +11,9 @@ import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class US009StepDefinitions {
@@ -92,10 +88,10 @@ public class US009StepDefinitions {
         Assert.assertTrue(us009Page.mobilePhoneNumberTextBox.getAttribute("value").contains("555-555-5553"));
     }
 
-    @Then("sayfayi kapatin ab")
-    public void sayfayi_kapatin_ab() {
-Driver.closeDriver();
-    }
+    //@Then("sayfayi kapatin ab")
+    //public void sayfayi_kapatin_ab() {
+    //Driver.closeDriver();
+    //  }
 
     @Then("Middle Initial textbox a data gir ab")
     public void middleInitialTextboxADataGirAb() {

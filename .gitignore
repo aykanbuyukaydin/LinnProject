@@ -1,8 +1,6 @@
 target
 *.iml
 .idea
-runner
-configuration.properties
-configuration.properties
-linnProject.runners
+src/test/java/linnProject/configuration.properties
+runners
 

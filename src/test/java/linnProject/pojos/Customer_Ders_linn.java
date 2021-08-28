@@ -3,7 +3,7 @@ package linnProject.pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Customer {
+public class Customer_Ders_linn {
     private int id;
     private String firstName;
     private String lastName;
@@ -17,9 +17,9 @@ public class Customer {
     private String ssn;
     private String createDate;
     private boolean zelleEnrolled;
-    private Country country;
+    private Country_Ders_linn country;
     private String state;
-    private Users user;
+    private Users_Ders_linn user;
     private String accounts;
 
     public int getId() {
@@ -126,11 +126,11 @@ public class Customer {
         this.zelleEnrolled = zelleEnrolled;
     }
 
-    public Country getCountry() {
+    public Country_Ders_linn getCountry() {
         return country;
     }
 
-    public void setCountry(Country country) {
+    public void setCountry(Country_Ders_linn country) {
         this.country = country;
     }
 
@@ -142,11 +142,11 @@ public class Customer {
         this.state = state;
     }
 
-    public Users getUser() {
+    public Users_Ders_linn getUser() {
         return user;
     }
 
-    public void setUser(Users user) {
+    public void setUser(Users_Ders_linn user) {
         this.user = user;
     }
 

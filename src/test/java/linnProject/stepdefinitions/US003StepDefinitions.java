@@ -12,6 +12,8 @@ import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
 import org.junit.Assert;
 
+import org.openqa.selenium.interactions.Actions;
+
 
 public class US003StepDefinitions {
     US003Page page = new US003Page();
