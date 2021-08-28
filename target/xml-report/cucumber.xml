@@ -1,58 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.16">
-    <testcase classname="System_should_allow_any_user_to_register" name="TC_001_Sistem,_herhangi_bir_kullanıcının_başarı_mesajıyla_doğrulanan_geçerli_kimlik_bilgileriyle_kaydolmasına_izin_vermelidir." time="16.284">
-        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=92.0.4515.159)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-3C5RJ5G', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\49163\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a783ec423418d4f738495ab24bcffbce&#10;*** Element info: {Using=xpath, value=//*[text()='Registration saved!']}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given is user on the home page..............................................passed
-Given user click on humon icon..............................................passed
-Given user click on the register button.....................................passed
-And user enters the SSN.....................................................passed
-And user enters the first_name..............................................passed
-And user enters the last_name...............................................passed
-And user enters the username................................................passed
-And user enters the address.................................................passed
-And user enters the mobile_phohe_number.....................................passed
-And user enters the email...................................................passed
-And user enters the new_password............................................passed
-And user enters the new_password_confirmation...............................passed
-And user clicks on the register_button......................................passed
-Then user verifies the success_message......................................failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="98.579">
+    <testcase classname="US009_SSN Gore Kullanici Arama" name="TC901_SSN Gore kullanici Arama ve Tum Bilgilerini Gorme" time="22.071">
+        <system-out>
+            <![CDATA[Given Web sayfasina git ab..................................................passed
+Then Insan Butuna tikla ab..................................................passed
+And Sign in tikla ab........................................................passed
+Then User Name gir (customer olarak) ab.....................................passed
+When Password gir (customer olarak) ab......................................passed
+And Sign in click yap ab....................................................passed
+And Cikan sayfada sag uste My Operations a tikla ab.........................passed
+And Manage Customers a tikla ab.............................................passed
+When Sag uste cikan Create a new Customer butonuna tikla ab.................passed
+And SSN textbox a kayıtlı bir SSN no gir ab.................................passed
+When Search butonuna tikla ab...............................................passed
+Then SSN no nun geldiğini test et ab........................................passed
+And SSN search yapildiginda diger bilgilerin geldigini test et ab...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US011_Tarih Musteri Olusturma Aninda OLusturulmalidir" name="Tarih, müşteri oluşturma anında oluşturulmalıdır" time="32.907">
+        <system-out>
+            <![CDATA[Given Web sayfasina git ab..................................................passed
+Then Insan Butuna tikla ab..................................................passed
+And Sign in tikla ab........................................................passed
+Then User Name gir (customer olarak) ab.....................................passed
+When Password gir (customer olarak) ab......................................passed
+And Sign in click yap ab....................................................passed
+And Cikan sayfada sag uste My Operations a tikla ab.........................passed
+And Manage Customers a tikla ab.............................................passed
+When Sag uste cikan Create a new Customer butonuna tikla ab.................passed
+And SSN textbox a kayıtlı bir SSN no gir ab.................................passed
+When Search butonuna tikla ab...............................................passed
+Then Middle Initial textbox a data gir ab...................................passed
+And Phone Number textbox a data gir ab......................................passed
+And Zip Code textbox a data gir ab..........................................passed
+And City textbox a data gir ab..............................................passed
+Then Create Date textbox a şu andaki tarihi data gir ab.....................passed
+And Account dropdrowndan bir hesap sec ab...................................passed
+And Zelle Enrolled box a tik at ab..........................................passed
+And Save botonuna tikla ab..................................................passed
+And translation-not-found yazısının geldigini test et ab....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US011_Tarih Musteri Olusturma Aninda OLusturulmalidir" name="Girilen tarih, müşteri oluşturma anından daha erken veya geçmişte olamaz." time="21.458">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Web sayfasina git ab..................................................passed
+Then Insan Butuna tikla ab..................................................passed
+And Sign in tikla ab........................................................passed
+Then User Name gir (customer olarak) ab.....................................passed
+When Password gir (customer olarak) ab......................................passed
+And Sign in click yap ab....................................................passed
+And Cikan sayfada sag uste My Operations a tikla ab.........................passed
+And Manage Customers a tikla ab.............................................passed
+When Sag uste cikan Create a new Customer butonuna tikla ab.................passed
+And SSN textbox a kayıtlı bir SSN no gir ab.................................passed
+When Search butonuna tikla ab...............................................passed
+Then Middle Initial textbox a data gir ab...................................passed
+And Phone Number textbox a data gir ab......................................passed
+And Zip Code textbox a data gir ab..........................................passed
+And City textbox a data gir ab..............................................passed
+Then Create Date textbox a gecmiş bir tarih data gir ab.....................passed
+And Save botonuna tikla ab..................................................passed
+And translation-not-found yazısının gelmedigini test et ab..................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=92.0.4515.159)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3C5RJ5G', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\49163\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63540}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a783ec423418d4f738495ab24bcffbce
-*** Element info: {Using=xpath, value=//*[text()='Registration saved!']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:3365)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
-	at java.base/java.lang.String.valueOf(String.java:3365)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
-	at linnProject.utilities.ReusableMethods.waitForVisibility(ReusableMethods.java:86)
-	at linnProject.stepdefinitions.US001StepDefinitions.user_verifies_the_success_message(US001StepDefinitions.java:85)
-	at ✽.user verifies the success_message(file:///C:/Users/49163/IdeaProjects/LinnProject/src/test/resources/features/US_001_Registration.feature:21)
-]]></failure>
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at linnProject.stepdefinitions.US009StepDefinitions.translationNotFoundYazısınınGelmediginiTestEtAb(US009StepDefinitions.java:180)
+	at ✽.translation-not-found yazısının gelmedigini test et ab(file:///D:/com.LinnProject/src/test/resources/features/US011_TarihBilgileriniGirme.feature:43)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US011_Tarih Musteri Olusturma Aninda OLusturulmalidir" name="Tarih ay, gün, yıl, saat ve dakika olarak oluşturulmalıdır." time="21.337">
+        <system-out>
+            <![CDATA[Given Web sayfasina git ab..................................................passed
+Then Insan Butuna tikla ab..................................................passed
+And Sign in tikla ab........................................................passed
+Then User Name gir (customer olarak) ab.....................................passed
+When Password gir (customer olarak) ab......................................passed
+And Sign in click yap ab....................................................passed
+And Cikan sayfada sag uste My Operations a tikla ab.........................passed
+And Manage Customers a tikla ab.............................................passed
+When Sag uste cikan Create a new Customer butonuna tikla ab.................passed
+And SSN textbox a kayıtlı bir SSN no gir ab.................................passed
+When Search butonuna tikla ab...............................................passed
+And Create Date textbox a eksik tarih gir ab................................passed
+And Tarih Text Box class degerinin invalid oldugunu test et ab..............passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
