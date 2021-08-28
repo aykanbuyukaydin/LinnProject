@@ -16,8 +16,11 @@ import org.junit.runner.RunWith;
         glue="linnProject/stepdefinitions",
 
 
-      
-        tags="@TC_1001", // work in progress
+     
+     
+        tags="@registrationPage" , // work in progress
+
+
 
         dryRun=false
 

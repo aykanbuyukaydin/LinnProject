@@ -8,6 +8,7 @@ import linnProject.utilities.Driver;
 
 public class US015StepDefinitions {
 
+
     US015Page us015Page = new US015Page();
 
     @Given("insan simgesine tiklar")
@@ -63,4 +64,5 @@ public class US015StepDefinitions {
     public void descriptionAltindaYerAlanAciklamayiGorur() {
         System.out.println("Islem aciklamasi :" + us015Page.islemAciklamasi.getText());
     }
+
 }
