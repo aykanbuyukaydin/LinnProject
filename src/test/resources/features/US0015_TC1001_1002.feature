@@ -1,3 +1,4 @@
+
 Feature: US0015_Hesaplar
   Background: US0015_ilkYediStep
     Given kullanici "url_home" sayfasina gider
@@ -7,7 +8,7 @@ Feature: US0015_Hesaplar
     And password boxina sifresini girer
     Then sign in boxina click yapar
     Given my operations'a tiklar
-
+  @TC_1001
   Scenario: TC1001_HesaplarVarMi
 
     And my accounts'a tiklar
