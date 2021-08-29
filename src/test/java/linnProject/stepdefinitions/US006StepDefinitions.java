@@ -9,9 +9,7 @@ import linnProject.pages.US006Page;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
@@ -55,11 +53,18 @@ public class US006StepDefinitions {
         us006Page.password.sendKeys("User06.");
     }
 
+
+   // @And("SignIn click yap")
+    //public void signınClickYap() {
+   //     us006Page.signInClick.click();
+   // }
+
     @And("Giris butonuna bas")
     public void girisButonunaBas() {
 
         us006Page.signInClick.click();
     }
+
 
     @Then("cikan sayfada sag uste username ye tikla")
     public void cikan_sayfada_sag_uste_username_ye_tikla() {
@@ -172,6 +177,5 @@ public class US006StepDefinitions {
         us006Page.emailDegistir.clear();
         us006Page.emailDegistir.sendKeys("celik@can.com");
     }
-
 }
 

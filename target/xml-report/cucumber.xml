@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.367">
+    <testcase classname="US_006_User info segment (User Settings) should be editable on Homepage" name="TC_0605_&quot;@&quot; işareti ve &quot;.&quot; içerme koşullarına uymak şartıyla e-posta adresini güncelleme seçeneği olmalıdır." time="13.975">
+        <system-out>
+            <![CDATA[Given kullanici "url_home" sayfasina gider..................................passed
+And insan tusuna tikla......................................................passed
+Then Giris tikla............................................................passed
+And User Name gir...........................................................passed
+And Paswword gir............................................................passed
+And Giris butonuna bas......................................................passed
+And cikan sayfada sag uste username ye tikla................................passed
+And user yazan insan butonuna tikla.........................................passed
+And User Info ya tikla......................................................passed
+And Email de degisiklik yap email "@ and . " icerecek sekilde email degistir.passed
+And Save butun a click yap..................................................passed
+And "Settings saved!" yazisinin goruldugunu check et........................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
