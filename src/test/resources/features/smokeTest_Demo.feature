@@ -12,7 +12,6 @@ Feature: 1.Sprint review meeting (Sprint Demo)
     And admin olarak username ve password bilgilerini girip login olur ab
     And kayit olunan kullanicin bilgileri active eder ab
     And admin hesabindan cikis yapar ab
-    When employee login sayfasına tiklar ab
     And employee olarak username ve password bilgilerini girip login olur ab
     When kayit olunan kullaniciya banka hesaplarini entegre eder ab
     Then employee hesabindan cikis yapar ab
