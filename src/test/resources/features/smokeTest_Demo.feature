@@ -15,10 +15,8 @@ Feature: 1.Sprint review meeting (Sprint Demo)
     And employee olarak username ve password bilgilerini girip login olur ab
     When kayit olunan kullaniciya banka hesaplarini entegre eder ab
     Then employee hesabindan cikis yapar ab
-    And kullanici login sayfasına tiklar ab
     And kullanici olarak username ve password bilgilerini girip login olur ab
     Then kullanici hesap sayfasina tiklar ab
     And kullanici para transferi yapar ab
     Then kullanici para transferi yaptigini dogrular ab
-
 
