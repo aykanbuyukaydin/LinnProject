@@ -15,7 +15,10 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="linnProject/stepdefinitions",
 
-        tags="@TC_1202", // work in progress
+      
+        tags="@calisma", // work in progress
+
+
 
         dryRun=false
 

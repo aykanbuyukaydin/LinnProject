@@ -1,5 +1,7 @@
 package linnProject.utilities;
 
+
+
 import io.github.bonigarcia.wdm.OperaDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +41,7 @@ public class Driver {
     }
     static public void closeDriver(){
         if (driver != null){
+            ReusableMethods.waitFor(2);
             driver.close();
             driver=null;
         }
