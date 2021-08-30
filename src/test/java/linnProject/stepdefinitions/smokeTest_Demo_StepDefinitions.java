@@ -7,6 +7,7 @@ import linnProject.pages.*;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -132,49 +133,98 @@ public class smokeTest_Demo_StepDefinitions {
         ReusableMethods.waitFor(3);
         us018Page.manageCustomersButton.click();
         ReusableMethods.waitFor(3);
-        us018Page.editButton.click();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-
-        Select select = new Select(us009Page.account);
-        select.deselectAll();
-        select.selectByValue("279-74-1800 nolu SSN numarali sahis icin olusturlan CHECKING hesap numarasi");
-        actions.keyDown(Keys.CONTROL ).perform();
-        select.selectByValue("279-74-1800 nolu SSN numarali sahis icin olusturlan SAVING hesap numarasi");
+        us009Page.createANewCustomer.click();
+        us009Page.ssnTextBox.sendKeys(ConfigReader.getProperty("r_snn"));
+        us009Page.searchButton.click();
+        ReusableMethods.waitFor(2);
+        us009Page.middleInitialTextBox.sendKeys(ConfigReader.getProperty("Middle_Initial_textbox_data"));
+        ReusableMethods.waitFor(2);
+        us009Page.phoneNumberTextBox.sendKeys(ConfigReader.getProperty("Phone_Number_textbox_data"));
+        ReusableMethods.waitFor(2);
+        us009Page.zipCodeTextBox.sendKeys(ConfigReader.getProperty("Zip_Code_textbox_data"));
+        ReusableMethods.waitFor(3);
+        us009Page.cityTextBox.sendKeys(ConfigReader.getProperty("City_textbox_data"));
+        ReusableMethods.waitFor(5);
+        us009Page.createDateTextBox.click();
+        us009Page.createDateTextBox.sendKeys("08" + "23" + "2021" + Keys.TAB + "03" + "03" );
+        ReusableMethods.waitFor(3);
+        us009Page.account1.click();
+        actions.keyDown(Keys.CONTROL).perform();
+        us009Page.account2.click();
         actions.keyUp(Keys.CONTROL).perform();
-        Thread.sleep(3000);
-        us0017Page.save.click();
-        Thread.sleep(3000);
+        ReusableMethods.waitFor(3);
+        us009Page.zelleBox.click();
+        ReusableMethods.waitFor(3);
+        us009Page.saveButton.click();
+        ReusableMethods.waitFor(3);
 
     }
 
     @Then("employee hesabindan cikis yapar ab")
     public void employee_hesabindan_cikis_yapar_ab() {
-
-    }
-
-    @Then("kullanici login sayfasına tiklar ab")
-    public void kullanici_login_sayfasına_tiklar_ab() {
+        us009Page.insanFigur.click();
+        ReusableMethods.waitFor(2);
+        us009Page.signOutButton2.click();
+        ReusableMethods.waitFor(2);
 
     }
 
     @Then("kullanici olarak username ve password bilgilerini girip login olur ab")
     public void kullanici_olarak_username_ve_password_bilgilerini_girip_login_olur_ab() {
+        registrationPage.humonicon.click();
+        page.signin.click();
+        ReusableMethods.waitFor(2);
+        page.username_kutusu.sendKeys(ConfigReader.getProperty("r_username"));
+        ReusableMethods.waitFor(2);
+        page.password_kutusu.sendKeys(ConfigReader.getProperty("r_password"));
+        ReusableMethods.waitFor(2);
+        page.signin_butonu.click();
+        ReusableMethods.waitFor(2);
 
     }
 
     @Then("kullanici hesap sayfasina tiklar ab")
     public void kullanici_hesap_sayfasina_tiklar_ab() {
+        us015Page.myOperations.click();
+        ReusableMethods.waitFor(3);
+        us009Page.transferMoney.click();
+        ReusableMethods.waitFor(3);
 
     }
 
     @Then("kullanici para transferi yapar ab")
     public void kullanici_para_transferi_yapar_ab() {
+        Select select = new Select(us009Page.fromSelect);
+        select.selectByIndex(1);
+        Select selectt = new Select(us009Page.toSelect);
+        selectt.selectByIndex(1);
+        ReusableMethods.waitFor(2);
+        us009Page.balanceTextBox.sendKeys(ConfigReader.getProperty("c_balance"));
+        ReusableMethods.waitFor(2);
+        us009Page.descriptionTextBox.sendKeys(ConfigReader.getProperty("c_description"));
+        ReusableMethods.waitFor(2);
+        us009Page.makeTransferButton.click();
+        ReusableMethods.waitFor(4);
+
 
     }
 
     @Then("kullanici para transferi yaptigini dogrular ab")
     public void kullanici_para_transferi_yaptigini_dogrular_ab() {
+        System.out.println(us009Page.basariliParaTransferiMesaji.isDisplayed());
+        Assert.assertTrue(us009Page.basariliParaTransferiMesaji.isDisplayed());
 
     }
 
 }
+/*
+    Select select = new Select(us009Page.account);
+        select.deselectAll();
+        select.selectByValue("279-74-1800 nolu SSN numarali sahis icin olusturlan CHECKING hesap numarasi");
+        actions.keyDown(Keys.CONTROL).perform();
+        select.selectByValue("279-74-1800 nolu SSN numarali sahis icin olusturlan SAVING hesap numarasi");
+        actions.keyUp(Keys.CONTROL).perform();
+        Thread.sleep(3000);
+        us0017Page.save.click();
+        Thread.sleep(3000);
+*/

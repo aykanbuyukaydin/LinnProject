@@ -91,10 +91,35 @@ public class US009Page {
     @FindBy(xpath = "//select[@id='tp-customer-account']")
     public WebElement account;
 
+    @FindBy(xpath = "//option[@value='19715']")
+    public WebElement account1;
 
+    @FindBy(xpath = "//option[@value='19716']")
+    public WebElement account2;
 
+    @FindBy(xpath = "//*[text()='Transfer Money']")
+    public WebElement transferMoney;
 
+    @FindBy(xpath = "//select[@name='fromAccountId']")
+    public WebElement fromSelect;
 
+    @FindBy(xpath = "//select[@name='toAccountId']")
+    public WebElement toSelect;
+
+    @FindBy(xpath = "//input[@name='balance']")
+    public WebElement balanceTextBox;
+
+    @FindBy(xpath = "//textarea[@name='description']")
+    public WebElement descriptionTextBox;
+
+    @FindBy(xpath = "//button[@id='make-transfer']")
+    public WebElement makeTransferButton;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public WebElement basariliParaTransferiMesaji;
+
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
+    public WebElement signOutButton2;
 
 
 
