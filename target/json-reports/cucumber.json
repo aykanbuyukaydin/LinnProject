@@ -525,13 +525,32 @@
       },
       {
         "line": 4,
+<<<<<<< HEAD
+        "name": "Us_006_US_006_User info segment (User Settings) should be editable on Homepa",
+=======
         "name": "Login olarak giris yapip musteri olusturma",
+>>>>>>> main
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 9047404900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici \"url_home\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url_home\"",
+                  "offset": 10
+                }
+              ],
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.kullaniciSayfasinaGider(java.lang.String)"
+=======
               "duration": 12133788500,
               "status": "passed"
             },
@@ -539,11 +558,33 @@
             "name": "Web sayfasina git ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.web_sayfasina_git_ab()"
+>>>>>>> main
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 158644700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "insan tusuna tikla",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.insanTusunaTikla()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194047400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Giris tikla",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.girisTikla()"
+=======
               "duration": 86993200,
               "status": "passed"
             },
@@ -692,17 +733,21 @@
             "result": {
               "duration": 2553031200,
               "status": "passed"
+>>>>>>> main
             },
-            "match": {
-              "location": "linnProject.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "Then "
+          },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 291298500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Name gir",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.user_name_gir()"
+=======
               "duration": 225789800,
               "status": "passed"
             },
@@ -722,11 +767,21 @@
             "name": "Phone Number textbox a data gir ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.phoneNumberTextboxADataGirAb()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 156587600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Paswword gir",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.paswword_gir()"
+=======
               "duration": 203682500,
               "status": "passed"
             },
@@ -734,11 +789,21 @@
             "name": "Zip Code textbox a data gir ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.zipCodeTextboxADataGirAb()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 185542600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Giris butonuna bas",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.girisButonunaBas()"
+=======
               "duration": 3194818200,
               "status": "passed"
             },
@@ -746,11 +811,21 @@
             "name": "City textbox a data gir ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.cityTextboxADataGirAb()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 57017700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "cikan sayfada sag uste username ye tikla",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.cikan_sayfada_sag_uste_username_ye_tikla()"
+=======
               "duration": 574504500,
               "status": "passed"
             },
@@ -783,6 +858,7 @@
             "name": "translation-not-found yazısının gelmedigini test et ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.translationNotFoundYazısınınGelmediginiTestEtAb()"
+>>>>>>> main
             },
             "keyword": "And "
           }
@@ -808,6 +884,15 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 481175800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user yazan insan butonuna tikla",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.userYazanInsanButonunaTikla()"
+=======
               "duration": 11591913900,
               "status": "passed"
             },
@@ -839,11 +924,21 @@
             "name": "Sign in tikla ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.sign_in_tikla_ab()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 86727100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Info ya tikla",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.user_ınfo_ya_tikla()"
+=======
               "duration": 90423700,
               "status": "passed"
             },
@@ -875,11 +970,60 @@
             "name": "Sign in click yap ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.sign_in_click_yap_ab()"
+>>>>>>> main
             },
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-28T19:01:14.642Z",
+        "before": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 1994300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "linnProject.stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "TC_0605_\"@\" işareti ve \".\" içerme koşullarına uymak şartıyla e-posta adresini güncelleme seçeneği olmalıdır.",
+        "description": "",
+        "id": "us-006-user-info-segment-(user-settings)-should-be-editable-on-homepage;tc-0605-\"@\"-işareti-ve-\".\"-içerme-koşullarına-uymak-şartıyla-e-posta-adresini-güncelleme-seçeneği-olmalıdır.",
+        "after": [
+          {
+            "result": {
+              "duration": 2342774400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "linnProject.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 424947600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Email de degisiklik yap email \"@ and . \" icerecek sekilde email degistir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@ and . \"",
+                  "offset": 30
+                }
+              ],
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.emailDeDegisiklikYapEmailIcerecekSekildeEmailDegistir(java.lang.String)"
+=======
               "duration": 560314800,
               "status": "passed"
             },
@@ -923,11 +1067,21 @@
             "name": "SSN textbox a kayıtlı bir SSN no gir ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.ssn_textbox_a_kayıtlı_bir_ssn_no_gir_ab()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 128656500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Save butun a click yap",
+            "match": {
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.saveButunAClickYap()"
+=======
               "duration": 121063300,
               "status": "passed"
             },
@@ -980,11 +1134,27 @@
             "name": "Create Date textbox a eksik tarih gir ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.createDateTextboxAEksikTarihGirAb()"
+>>>>>>> main
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 320426900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "\"Settings saved!\" yazisinin goruldugunu check et",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Settings saved!\"",
+                  "offset": 0
+                }
+              ],
+              "location": "linnProject.stepdefinitions.US006StepDefinitions.yazisininGoruldugunuCheckEt(java.lang.String)"
+=======
               "duration": 5096037900,
               "status": "passed"
             },
@@ -992,12 +1162,19 @@
             "name": "Tarih Text Box class degerinin invalid oldugunu test et ab",
             "match": {
               "location": "linnProject.stepdefinitions.US009StepDefinitions.tarihTextBoxClassDegerininInvalidOldugunuTestEtAb()"
+>>>>>>> main
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@user06"
+          },
+          {
+            "name": "@test05"
+=======
             "name": "@raporUS011"
           },
           {
@@ -1005,10 +1182,21 @@
           },
           {
             "name": "@raporTC1103"
+>>>>>>> main
           }
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "US_006_User info segment (User Settings) should be editable on Homepage",
+    "description": "",
+    "id": "us-006-user-info-segment-(user-settings)-should-be-editable-on-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_006.feature",
+    "tags": [
+      {
+        "name": "@user06",
+=======
     "name": "US011_Tarih Musteri Olusturma Aninda OLusturulmalidir",
     "description": "",
     "id": "us011-tarih-musteri-olusturma-aninda-olusturulmalidir",
@@ -1017,6 +1205,7 @@
     "tags": [
       {
         "name": "@raporUS011",
+>>>>>>> main
         "type": "Tag",
         "location": {
           "line": 1,
