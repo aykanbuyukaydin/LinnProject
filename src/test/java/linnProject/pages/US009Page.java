@@ -79,4 +79,24 @@ public class US009Page {
 
 
 
+    @FindBy(xpath = "(//th[@class='hand'])[5]")
+    public WebElement createdDate;
+
+    @FindBy(xpath = "//input[@id='activated']")
+    public WebElement activated;
+
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[10]")
+    public WebElement signOutButton;
+
+    @FindBy(xpath = "//select[@id='tp-customer-account']")
+    public WebElement account;
+
+
+
+
+
+
+
+
+
 }
