@@ -15,9 +15,8 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="linnProject/stepdefinitions",
 
-
       
-        tags="@wipemre1", // work in progress
+        tags="@calisma", // work in progress
 
 
 
