@@ -2,6 +2,7 @@ package linnProject.utilities;
 
 //import gmibank.com.pojos.Country;
 import linnProject.pojos.Country_Ders_linn;
+import linnProject.pojos.Customer_Ders_linn;
 //import gmibank.com.pojos.Customer;
 //import gmibank.com.pojos.States;
 
@@ -184,6 +185,8 @@ public class WriteToTxt {
         } catch (Exception e) {
         }
     }
+
+
 
     public static void saveDataInFileWithCountry_linnId(String fileName, Country_Ders_linn[] countries) {
         try {
