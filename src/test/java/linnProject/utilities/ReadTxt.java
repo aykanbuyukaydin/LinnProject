@@ -2,6 +2,7 @@ package linnProject.utilities;
 //import gmibank.com.pojos.*;
 
 import linnProject.pojos.Country_Ders_linn;
+import linnProject.pojos.Customer_Ders_linn;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -156,21 +157,22 @@ public class ReadTxt {
         }
         return all;
     }
-
+*/
 
     public static List<String> returnCountryIdList(String filePath){
         List<String>all = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             StringBuilder sb = new StringBuilder();
             String line = br.readLine();
-            System.out.println(line);
+         //  System.out.println(line);
             int i = 0;
             while (line != null) {
-                Customer customer = new Customer();
+                Customer_Ders_linn customer = new Customer_Ders_linn();
+
                 customer.setSsn(line.split(",")[0]);
                 sb.append(System.lineSeparator());
                 line = br.readLine();
-                System.out.println(i++);
+                //System.out.println(i++);
                 all.add(customer.getSsn());
             }
         }catch (Exception e){
@@ -178,7 +180,7 @@ public class ReadTxt {
         }
         return all;
     }
-*/
+
     public static List<String> returnCountry_linnNameList(String filePath){
         List<String>all = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) {
