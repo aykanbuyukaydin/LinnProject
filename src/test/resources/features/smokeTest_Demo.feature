@@ -20,3 +20,6 @@ Feature: 1.Sprint review meeting (Sprint Demo)
     And kullanici para transferi yapar ab
     Then kullanici para transferi yaptigini dogrular ab
 
+# Dipnot :
+# employee kayit olunan kullaniciya banka hesaplarini entegre etmeden once yeni hesap acmasi gerekir
+# ama ben bu adimi yapamdim olusturulmus hesaplari entegre etmeyi tercih ettim
