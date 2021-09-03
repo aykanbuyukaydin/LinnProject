@@ -1,11 +1,5 @@
 target
 *.iml
 .idea
-<<<<<<< HEAD
 src/test/java/linnProject/configuration.properties
 runners
-=======
-configuration.properties
-runners
-
->>>>>>> main

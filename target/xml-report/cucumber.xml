@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="48.367">
-    <testcase classname="US0017_AdminRolAktivasyonu" name="Admin kullanici duzenleme yapabilmeli" time="46.915">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.226">
+    <testcase classname="US0017_AdminRolAktivasyonu" name="Admin kullanici duzenleme yapabilmeli" time="41.944">
         <system-out>
             <![CDATA[Given kullanici url_home sayfasina gider z..................................passed
 And kullanici insan figurune tiklar z.......................................passed
