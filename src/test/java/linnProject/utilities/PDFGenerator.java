@@ -340,7 +340,7 @@ public class PDFGenerator {
     }
 
 
-    public static void pdfGeneratorRowsAndCellsWithListFirstToFive(String header, List <Customer_Ders_linn> list, String fileName){
+    public static void pdfGeneratorRowsAndCellsWithListFirstToTen(String header, List <Customer_Ders_linn> list, String fileName){
 
         Document document = new Document();
         String pdf_path = fileName;
@@ -349,9 +349,9 @@ public class PDFGenerator {
         List<String> headers = new ArrayList<String>();
         headers.add("Firstname");
         headers.add("LastName");
+        headers.add("MiddleInitial");
         headers.add("Email");
-        headers.add("City");
-        headers.add("SSN Number");
+        headers.add("MobilePhoneNumber");
 
 
 
@@ -387,7 +387,7 @@ public class PDFGenerator {
                 table.addCell(list.get(i).getLastName());
                 table.addCell(list.get(i).getMiddleInitial());
                 table.addCell(list.get(i).getEmail());
-                table.addCell(list.get(i).getSsn());
+                table.addCell(list.get(i).getMobilePhoneNumber());
 
             }
             document.add(table);

@@ -1,11 +1,8 @@
 package linnProject.stepdefinitions;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import linnProject.pages.US004Page;
-import linnProject.utilities.ConfigReader;
-import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
 import org.junit.Assert;
 

@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import linnProject.pages.US015Page;
 import linnProject.utilities.ConfigReader;
-import linnProject.utilities.Driver;
 
 public class US015StepDefinitions {
 

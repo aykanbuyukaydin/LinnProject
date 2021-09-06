@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import linnProject.pojos.Country_Ders_linn;
 import linnProject.pojos.States_Api_US22;
 import linnProject.utilities.ConfigReader;
 

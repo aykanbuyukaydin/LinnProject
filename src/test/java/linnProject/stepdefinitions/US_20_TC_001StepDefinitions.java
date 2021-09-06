@@ -1,7 +1,5 @@
 package linnProject.stepdefinitions;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -9,17 +7,14 @@ import linnProject.utilities.ConfigReader;
 import linnProject.utilities.ReadTxt;
 import org.junit.Assert;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.equalTo;
 
 public class US_20_TC_001StepDefinitions {
 
 
-    Response response;
+   Response response;
 
 
     @Then("Tüm müşteri verilerini okuyun")

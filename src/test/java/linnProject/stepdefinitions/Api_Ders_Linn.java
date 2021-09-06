@@ -154,7 +154,7 @@ public class Api_Ders_Linn {
     public void create_country(String api_url) {
 
         response = given().headers("Authorization",
-                "Bearer "+ConfigReader.getProperty("token"),
+                "Bearer "+ ConfigReader.getProperty("token"),
                 "Content-Type",
                 ContentType.JSON,
                 "Accept", ContentType.JSON)

@@ -1,18 +1,13 @@
 package linnProject.stepdefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en_old.Ac;
 import linnProject.pages.US003Page;
-import linnProject.pages.US009Page;
 import linnProject.utilities.ConfigReader;
 import linnProject.utilities.Driver;
 import linnProject.utilities.ReusableMethods;
 import org.junit.Assert;
-
-import org.openqa.selenium.interactions.Actions;
 
 
 public class US003StepDefinitions {
