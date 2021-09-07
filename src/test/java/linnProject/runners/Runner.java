@@ -9,8 +9,13 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features="src/test/resources/features",
         glue="linnProject/stepdefinitions",
-        tags="@wip", // work in progress
+
+
+      
+        tags="@registrationPage", // work in progress
+
         dryRun=false
+  
 )
 public class Runner {
 }
