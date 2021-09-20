@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         glue="linnProject/stepdefinitions",
 
 
-
+        tags="@testText",
 
 
         dryRun=false

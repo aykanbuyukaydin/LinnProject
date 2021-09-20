@@ -14,7 +14,7 @@ public class US001StepDefinitions {
 
     @Given("is user on the home page")
     public void is_user_on_the_registration_page() {
-        Driver.getDriver().get(ConfigReader.getProperty("bank_home_page_url"));
+      //  Driver.getDriver().get(ConfigReader.getProperty("bank_home_page_url"));
 
     }
     @Given("user click on humon icon")

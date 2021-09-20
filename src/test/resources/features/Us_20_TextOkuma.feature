@@ -1,14 +1,13 @@
+@testText
 Feature:Tüm Musteri Verilerini test edilmesi
 
-  @test20
+ Background: US_20 Musterileri okuma
+   Then Tüm müşteri verilerini okuyun
+
   Scenario:Musteri olustur ve tüm olusturulan müşterileri okuyun ve bunları data setinizden doğrulayın
-    Then Tüm müşteri verilerini okuyun
     And Bunları data setinizden doğrulayın
 
-
-  @test0202
+  @test
   Scenario:Musteri olustur ve tüm olusturulan müşterileri okuyun ve bunları data setinizden doğrulayın
+    Then Bunları data setinizden tek tek doğrulayın
 
-
-    Then Tüm müşteri verilerini okuyun
-    And Bunları data setinizden doğrulayın
