@@ -15,7 +15,7 @@ public class Database_Ders_Linn {
 
         createConnection();
         String queryCustomerData = "Select * from tp_customer";
-        System.out.println(getColumnNames(queryCustomerData));
+       System.out.println(getColumnNames(queryCustomerData));
         System.out.println("=============================================");
         System.out.println(getColumnData(queryCustomerData,"first_name"));
         System.out.println("=============================================");
@@ -43,7 +43,7 @@ public class Database_Ders_Linn {
     @Then("database ders bank7 validate customers data")
     public void database_ders_bank7_validate_customers_data() {
 
-        Assert.assertTrue(objectList.contains("843-96-3674"));
+        Assert.assertTrue(objectList.contains("159-63-9248"));
         System.out.println("====================================================");
         System.out.println("Validation is succesfull");
 

@@ -187,12 +187,12 @@ public class WriteToTxt {
     }
 
 
-
-    public static void saveDataInFileWithCountry_linnId(String fileName, Country_Ders_linn[] countries) {
+//customer eklendi
+    public static void saveDataInFileWithCustomer_linnId(String fileName, Customer_Ders_linn[] customers) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
-            for (int i = 0; i < countries.length; i++)
-                writer.append(countries[i].getId() + "\n");
+            for (int i = 0; i < customers.length; i++)
+                writer.append(customers[i].getFirstName() + "\n");
             writer.close();
         } catch (Exception e) {
         }

@@ -7,4 +7,4 @@ Scenario Outline: TC_1001 Kullanici bir eyaleti silebilir
 
 Examples:
 | id|
-|/94702|
+|/22703|

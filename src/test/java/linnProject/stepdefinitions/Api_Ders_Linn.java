@@ -129,7 +129,7 @@ public class Api_Ders_Linn {
 
         // ulke idlerini txt olarak yazdiralim
 
-        WriteToTxt.saveDataInFileWithCountry_linnId("countryId2",country_Ders_linn);
+        WriteToTxt.saveDataInFileWithCountry_linnName("countryId2",country_Ders_linn);
 
 
         // txt olarak yazdirdigimiz idleri readtxt uzerinden okutalim
